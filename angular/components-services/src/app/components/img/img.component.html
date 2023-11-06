@@ -1,0 +1,5 @@
+<img [src]="img" alt="" *ngIf="img;else myBlock">
+
+<ng-template #myBlock>
+    <img width="35%" src="./assets/ric.png" alt="">
+</ng-template>
