@@ -1,5 +1,5 @@
-<img [src]="img" alt="" *ngIf="img;else myBlock">
+<img [src]="img" alt="" (load)="onLoad()" (error)="onError()" >
 
 <ng-template #myBlock>
-    <img width="35%" src="./assets/ric.png" alt="">
+    <img width="35%" [src]="img" alt="">
 </ng-template>
